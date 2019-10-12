@@ -4,11 +4,6 @@ dependencies:
     repository: "file://../src/edgex-core-command"
     condition: edgex-core-command.enabled
 
-  - name: edgex-core-consul
-    version: "*"
-    repository: "file://../src/edgex-core-consul"
-    condition: edgex-core-consul.enabled
-
   - name: edgex-core-data
     version: "*"
     repository: "file://../src/edgex-core-data"
@@ -59,34 +54,7 @@ dependencies:
     repository: "file://../src/edgex-support-scheduler"
     condition: edgex-support-scheduler.enabled
 
-  - name: edgex-config-seed
-    version: "*"
-    repository: "file://../src/edgex-config-seed"
-    condition: edgex-config-seed.enabled
-
   - name: edgex-ui-go
     version: "*"
     repository: "file://../src/edgex-ui-go"
     condition: edgex-ui-go.enabled
-
-# API Security Gateway
-
-  - name: edgex-vault
-    version: "*"
-    repository: "file://../src/edgex-vault"
-    condition: edgex-vault.enabled
-
-  - name: edgex-kong
-    version: "*"
-    repository: "file://../src/edgex-kong"
-    condition: edgex-kong.enabled
-
-  - name: edgex-kong-db
-    version: "*"
-    repository: "file://../src/edgex-kong-db"
-    condition: edgex-kong-db.enabled
-
-  - name: edgex-blackbox-testing
-    version: "*"
-    repository: "file://../src/edgex-blackbox-testing"
-    condition: edgex-blackbox-testing.enabled

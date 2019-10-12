@@ -28,18 +28,15 @@ spec:
           value: "49990"
         ports:
         - containerPort: 49990
-        #command: ["/bin/sh", "-c", "java -jar -Djava.security.egd=file:/dev/urandom -Xmx100M $APP_DIR/$APP"]
+        #command: ["/device-virtual","--profile=docker","--confdir=/res"]
         command:
         {{ range .Values.command }}
         - {{ . }}
         {{ end }}
         volumeMounts:
         - name: device-virtual-volume
-          mountPath: /edgex/edgex-device-virtual/bootstrap.properties
-          subPath: bootstrap.properties
-        - name: device-virtual-volume
-          mountPath: /edgex/edgex-device-virtual/application.properties
-          subPath: application.properties
+          mountPath: /res/docker/configuration.toml
+          subPath: configuration.toml
       volumes: 
       - name: device-virtual-volume
         configMap:

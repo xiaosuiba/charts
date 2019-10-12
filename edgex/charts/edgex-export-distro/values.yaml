@@ -1,1 +1,3 @@
-image: edgexfoundry/docker-export-distro-go:0.7.1
+enabled: false
+image: edgexfoundry/docker-export-distro-go:1.0.1
+command: ["/bin/sh", "-c", "/export-distro"]

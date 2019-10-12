@@ -1,1 +1,6 @@
-image: edgexfoundry/docker-edgex-mongo:0.6.0
+  enabled: true
+  image: edgexfoundry/docker-edgex-mongo:1.0.1
+  storage:
+    storageRequest: "100Mi"
+    #storageClassName: "-"
+    

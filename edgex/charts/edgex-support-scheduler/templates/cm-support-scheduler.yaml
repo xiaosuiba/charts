@@ -157,7 +157,7 @@ data:
     [Databases]
       [Databases.Primary]
       Host = '{{ .Release.Name }}-edgex-mongo'
-      Name = 'meta'
+      Name = 'scheduler'
       Password = 'password'
       Port = 27017
       Username = 'scheduler'

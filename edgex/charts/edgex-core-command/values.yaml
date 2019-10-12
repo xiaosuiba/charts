@@ -1,2 +1,4 @@
-image: edgexfoundry/docker-core-command-go:0.7.1
+image: edgex/docker-core-command-go:1.0.1
+command: ["/core-command","--profile=docker","--confdir=/res"]
 init_wait: false
+enabled: true

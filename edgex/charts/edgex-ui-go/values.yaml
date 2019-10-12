@@ -1,4 +1,5 @@
-image: badboyqiao/edgex-ui-go:0.1
+enabled: true
+image: edgexfoundry/docker-edgex-ui-go:1.0.0
 ingress:
   enabled: false
   annotations:

@@ -1,1 +1,3 @@
-image: edgexfoundry/docker-support-scheduler:0.7.1
+enabled: true
+image: edgexfoundry/docker-support-scheduler-go:1.0.1
+command: ["/support-scheduler","--profile=docker"]

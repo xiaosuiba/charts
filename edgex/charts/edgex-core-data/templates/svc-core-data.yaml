@@ -5,6 +5,7 @@ metadata:
   labels:
     app: {{ .Release.Name }}-edgex
 spec:
+  type: LoadBalancer
   ports:
   - port: 48080
     protocol: TCP

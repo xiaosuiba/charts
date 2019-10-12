@@ -22,4 +22,3 @@ spec:
           value: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
         ports:
         - containerPort: 4000
-        command: ["./edgex-ui-go"]

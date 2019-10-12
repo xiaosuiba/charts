@@ -1,1 +1,3 @@
-image: edgexfoundry/docker-core-metadata-go:0.7.1
+enabled: true
+image: edgexfoundry/docker-core-metadata-go:1.0.1
+command: ["/core-metadata","--profile=docker","--confdir=/res"]

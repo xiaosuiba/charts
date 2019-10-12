@@ -36,6 +36,9 @@ spec:
           value: "10"
         ports:
         - containerPort: 27017
+        volumeMounts:
+        - mountPath: /data/db
+          name: db-data
         command: ["/bin/sh", "-c", "/edgex/mongo/config/launch-edgex-mongo.sh"]
         readinessProbe:
           exec:
@@ -43,3 +46,7 @@ spec:
             - mongo
             - --eval
             - "db.adminCommand('ping')"
+      volumes:
+      - name: db-data
+        persistentVolumeClaim:
+          claimName: {{ .Release.Name }}-edgex-mongo

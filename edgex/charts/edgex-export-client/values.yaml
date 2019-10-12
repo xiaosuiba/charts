@@ -1,1 +1,3 @@
-image: edgexfoundry/docker-export-client-go:0.7.1
+  enabled: true
+  image: edgexfoundry/docker-export-client-go:1.0.1
+  command: ["/export-client","--profile=docker","--confdir=/res"]

@@ -5,6 +5,7 @@ metadata:
   labels:
     app: edgex-core-metadata
 spec:
+  type: LoadBalancer
   ports:
   - port: 48081
     protocol: TCP
